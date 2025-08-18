@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SigClean™ Pet Hair Remover Roller</title>
+  <style>
+    :root {
+      --bg:#0b0f14; --card:#121821; --text:#eef2f6; --muted:#9fb0c3; --accent:#35c277;
+    }
+    * {box-sizing:border-box}
+    body {
+      margin:0; min-height:100vh; display:flex; align-items:center; justify-content:center;
+      background:linear-gradient(135deg,#0b0f14,#0f1722);
+      font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; color:var(--text);
+      padding:24px;
+    }
+    .product {
+      background:var(--card); border:1px solid rgba(255,255,255,.06); border-radius:24px;
+      max-width:980px; width:100%; padding:28px; box-shadow:0 10px 30px rgba(0,0,0,.35);
+    }
+    .hero { width:100%; border-radius:18px; display:block; }
+    h1 { margin:20px 0 8px; font-size:42px; line-height:1.1; }
+    .subtitle { color:var(--muted); font-size:18px; margin-bottom:18px; }
+    .bullets { display:grid; grid-template-columns: repeat(auto-fit,minmax(220px,1fr)); gap:10px 20px; margin:14px 0 10px; }
+    .bullets li { list-style: "✓ "; padding-left:6px; color:#bfead0; }
+    .price { font-size:38px; font-weight:700; margin:18px 0; }
+    .cta { display:flex; gap:12px; flex-wrap:wrap; align-items:center; }
+    .btn {
+      background:var(--accent); color:#072713; padding:14px 22px; border-radius:14px; text-decoration:none; font-weight:700;
+      transition: transform .08s ease;
+    }
+    .btn:active { transform: scale(.98); }
+    .badge { color:var(--muted); font-size:14px; }
+    .fine { color:#8aa0b5; font-size:13px; margin-top:10px; }
+    @media (max-width:520px) { h1 {font-size:30px} .price{font-size:30px} }
+  </style>
+</head>
+<body>
+  <main class="product">
+    <img class="hero" src="product.png" alt="SigClean Pet Hair Remover Roller">
+    <h1>SigClean™ Pet Hair Remover Roller</h1>
+    <p class="subtitle">Reusable, self-cleaning roller that pulls pet hair from couches, car seats, bedding, and more — no sticky sheets.</p>
+    <ul class="bullets">
+      <li>Works on fabric sofas, car interiors, rugs, and blankets</li>
+      <li>Zero refills — empty and reuse, good for hundreds of passes</li>
+      <li>Quick-clean chamber with latch — dump fur in seconds</li>
+      <li>Ergonomic, non-slip handle for longer sessions</li>
+    </ul>
+    <div class="price">$19.99</div>
+    <div class="cta">
+      <!-- Replace the href below with your Stripe Checkout or Payment Link URL -->
+      <a class="btn" href="PASTE_STRIPE_CHECKOUT_URL">Buy Now</a>
+      <span class="badge">Secure checkout with Stripe</span>
+    </div>
+    <p class="fine">Shipping: US delivery in 3–7 business days for most orders. Easy 30‑day returns.</p>
+  </main>
+</body>
+</html>
